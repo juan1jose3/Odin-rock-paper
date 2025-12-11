@@ -1,4 +1,4 @@
-
+/*
 function computerChoice(){
     const randomChoice = Math.floor(Math.random() * 3) + 1;
     let choice;
@@ -60,3 +60,4 @@ function playRound(){
 
 playRound();
 
+*/
