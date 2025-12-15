@@ -17,13 +17,17 @@ function computerChoice(){
 function humanChoice(){
     let choice = document.querySelector(".choice");
     let items = document.querySelector(".items");
+    
 
     choice.addEventListener("click",(event)=>{
         let target = event.target;
+        console.log(target.id);
+        
         
         
         switch(target.id){
             case "rock":
+                
                 items.textContent = `.:..:.:.-:.:.:..:.:.::.:.:.::.: :. :.:.::.:.:..:.:.::.:.:.
  :..: :.::.: :. : : ::.:@@@@@@@@@@@@@@@@: : : .:.: :: : : 
 .:..:.:.::.:.:..:.:.@@@@@.             %@@@.:..:.:.::.:.:.
@@ -122,11 +126,22 @@ function humanChoice(){
 
 `;
                 break;
+            
         }
+
+        
+        
+        
+
+        
+
+        
     });
+
+    
 }
 
-humanChoice();
+humanChoice()
 
 /*
 function playRound(){
