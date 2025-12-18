@@ -25,23 +25,41 @@ body{
     color: #BBBBBB;
     font-size: 2em;
 }
-.specialContainer{
-    margin-top: 7rem;
+
+.scoreContainer{
+    
+    margin-top: 1rem;
+    font-size: 8rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 7rem;
+    gap: 2.5rem;
+}
+
+.scoreContainer p{
+    color: #BBBBBB;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.specialContainer{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
     
     
 }
 .consoleContainer{
     display: flex;
     justify-content: center;
+    
    
     text-align: center;
     border:2px white solid;
-    min-width: 50vw;
-    min-height: 450px;
+    min-width: 40vw;
+    min-height: 300px;
     border-radius: 8px;
 }
 
@@ -53,26 +71,29 @@ body{
 }
 
 .console{
+    margin-top: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
     border:2px white dashed;
-    min-width: 40vw;
-    min-height: 350px;
+    min-width: 35vw;
+    min-height: 300px;
     border-radius: 8px;
 }
 
 .items{
+    font-family: monospace;
     display: flex;
     justify-content: center;
     align-items: center;
     white-space: pre;
-    font-size: 14px;
-    line-height: 14px;
+    font-size: clamp(6px, 1.2vw, 8px);
+    line-height: 1em;
 }
 
 .terminalButton{
     margin-top: 1em;
+    margin-bottom: 1em;
     border: none;
     background: none;
     cursor: pointer;
