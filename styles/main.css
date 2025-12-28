@@ -36,6 +36,76 @@ body{
     gap: 2.5rem;
 }
 
+.animationContainer{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.humanAnimation.box{
+    
+    animation-name: fadeOutFadeInHuman;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    
+}
+
+.botAnimation.box{
+    animation-name: fadeOutFadeInBot;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+
+.display{
+    font-family: monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: pre;
+    font-size: clamp(2px, 1vw, 3px);
+    line-height: 1em;
+
+}
+
+@keyframes fadeOutFadeInHuman{
+    
+    from{
+        transform: translateX(100px);
+        opacity: 1;
+
+    }
+    to{
+        
+        transform: translateX(-100px);
+        opacity: 0;
+    
+    }
+   
+}
+
+@keyframes fadeOutFadeInBot{
+    from{
+        transform: translateX(-100px);
+        opacity: 1;
+        
+
+    }
+    to{
+        
+        transform: translateX(100px);
+        opacity: 0;
+    
+    }
+
+}
+
+.info{
+    text-align: center;
+    font-size: 2rem;
+}
+
 .scoreContainer p{
     color: #BBBBBB;
     font-size: 1.5rem;
@@ -43,7 +113,7 @@ body{
 }
 
 .specialContainer{
-    margin-top: 2rem;
+    margin-top: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
