@@ -489,13 +489,13 @@ function showState(){
   if(humanScore > botScore){
     let defeatLogs = logs.botDefeatedLogs;
     randomLog = Math.floor(Math.random() * defeatLogs.length);
-    return defeatLogs[randomLog] + ` [${getTimeStamp()}]`;
+    return  "Bot logs: " + ` [${getTimeStamp()}] `+ defeatLogs[randomLog];
 
   }
 
   let winLogs = logs.botWinLogs;
   randomLog = Math.floor(Math.random() * winLogs.length);
-  return winLogs[randomLog] + ` [${getTimeStamp()}]`;
+  return "Bot logs: " + `[${getTimeStamp()}] `+ winLogs[randomLog];
   
 
 
